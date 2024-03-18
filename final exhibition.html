@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCCICentral.com</title>
+  
+    <style>
+        /* Basic CSS for the navigation bar */
+        ul.navbar {
+            list-style-type:none;
+            margin: 0;
+            padding: 30px auto;
+            /* overflow: hidden; */
+            background-color: #0913a7;
+            text-align: center;
+            width: 100%;
+            font-size: 30px;
+            font-style: bold;
+        }
+
+        li.nav-item {
+            display: inline-block;
+            margin: 25px auto;
+        }
+        li.navbar-logo{
+            float: left;
+            padding: 10px;
+        }
+        a.nav-link {
+            display: block;
+            color: rgb(242, 243, 245);
+            text-decoration: solid; 
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a.nav-link:hover {
+            background-color:rgb(44, 43, 43);
+        }
+
+        /* Basic CSS for the table */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            background-color:lightblue
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            color: rgb(5, 5, 5);
+        }
+
+        th {
+            background-color: #0a0a55;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color:rgb(55, 142, 229);
+        }
+</style>
+</head>
+<style>
+    header {
+      background-color:rgb(5, 5, 5);
+      color: white;
+      text-align: center;
+    }
+    body {
+      font-size:x-large;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin: 30px auto;
+      border-collapse: collapse;
+    }
+
+    td.team-info {
+        text-align: left;
+        padding: 8px;
+    }
+    .status-circle {
+            /* display: inline-block; */
+            margin: 15px; /* Adjust the margin for spacing */
+            /* border-radius: ; */
+            text-align: center;
+            /* line-height: 20px; */
+            font-weight: bold;
+            color: white;
+            display:inline-flex;
+            /* vertical-align: center;  */
+            text-align: center; 
+            line-height: 10px;
+            font-size: 30px; 
+            font-weight: bold;
+        }
+
+        .circle-green {
+            background-color: green;
+            /* box-sizing: border-box; */
+            width: 6px;
+            height: 6px;
+        }
+
+        .circle-red {
+            background-color: red;
+            /* box-sizing: border-box; */
+            width: 6px;
+            height: 6px;
+        }
+    .table1 {
+      width: 80%;
+      margin: 30px auto;
+      /* margin-left: 20px; */
+      /* margin-right: 20px; */
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .table1 th, td {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .table1 thead {
+      background-color: #041d91;
+      color: white;
+    }
+
+    .table1 tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .table1 tbody tr:hover {
+      background-color: #ddd;
+    }
+    body{
+        background-color:rgb(0, 0, 0);
+    }
+    .container{
+        font-style: italic;
+        font-weight: 800;
+        font-family: 'Courier New', Courier, monospace;
+        /* font-palette: white; */
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .highlight-section {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .highlight-box {
+      background-color: #000000;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+      width: calc(33.33% - 20px); /* 3 boxes in a row, with margin adjustment */
+      margin: 10px 20px;
+      /* height:  Set an equal height for all boxes */
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+
+    .highlight-box h2 {
+      margin-top: 30px auto;
+      font-size: 24px;
+    }
+    .neon-blue {
+      background-color:black; 
+      box-shadow: 0 0 15px #0505f0, 0 0 20px #0505f0, 0 0 30px #0505f0; /* Neon glow effect */
+    }
+
+    
+    footer{
+      font-size:large;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+</style>
+
+<body>
+
+    <!-- <div class="navbar-logo">  -->
+    <ul class="navbar">
+        <!-- "Cricket Score" option links to the score page -->
+        <li class="navbar-logo"><img src="download.png" alt="download" width="96px"height="96px"></li>
+        <li class="nav-item"><a class="nav-link" href="">Score</a></li>
+        <!-- "cricket matches" option links to the match page -->
+        <li class="nav-item"><a class="nav-link" href="">Matches</a></li>
+        <!-- "cricket highlights"  option links to the highlight page-->
+        <li class="nav-item"><a class="nav-link" href="">Match Highlights</a></li>          
+        <!-- "Cricket Humor" option links to the humor page -->
+        <!-- <li class="nav-item"><a class="nav-link" href="#cricket_humor.html">Humor & Meme</a></li> -->
+    </ul>
+  <!-- </div> -->
+  <br>
+  <img src="sJQ8GXnvKn.webp" alt="" width="80%" height="80%" style="height: fit-content;">
+<br>
+<header>
+  <h1 style="margin:30px auto" class=".container"><u><b>Teams & Scores</b></u></h1>
+  </header>
+    <section>
+    <div class="Score">
+    <table table style="margin: left 96px;" >
+        <tr>
+            <th>Team</th>
+            <th>M</th>
+            <th>W</th>
+            <th>L</th>
+            <th>NRR</th>
+            <th>Pts</th>
+            <th>Last5</th>
+        </tr>
+        <tr>
+            <td class="team-info">1 <img src="27130.jpg" alt=" IND" width="30px" height="20px">  IND </td>
+             <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>8</td>
+            <td>8</td>
+            <td>0</td>
+            <td>+2.456</td>
+            <td>16</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+        </tr>
+        <tr>
+            <td class="team-info">2 <img src="27118.jpg" alt=" SA" width="30px" height="20px">  SA  </td>
+                <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>8</td>
+            <td>6</td>
+            <td>2</td>
+            <td>+1.376</td>
+            <td>12</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            
+            
+        </tr><tr>
+            <td class="team-info">3 <img src="27116.jpg" alt=" AUS" width="30px" height="20px">  AUS </td>
+                <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>7</td>
+            <td>5</td>
+            <td>2</td>
+            <td>+0.924</td>
+            <td>10</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+        </tr><tr>
+            <td class="team-info">4 <img src="27119.jpg" alt=" NZ" width="30px" height="20px">  NZ </td>
+                <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>8</td>
+            <td>4</td>
+            <td>4</td>
+            <td>+0.398</td>
+            <td>8</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+        </tr><tr>
+            <td class="team-info">5 <img src="27123.jpg" alt=" PAK" width="30px" height="20px">  PAK </td>
+                <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>8</td>
+            <td>4</td>
+            <td>4</td>
+            <td>+0.036</td>
+            <td>8</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+        </tr><tr>
+            <td class="team-info">6 <img src="afghanistan-flag.jpg" alt=" AFG" width="30px" height="20px">  AFG </td>
+                <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>7</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-0.330</td>
+            <td>8</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+        </tr>
+        <tr>
+          <td class="team-info">9 <img src="bangladesh-flag.jpg" alt=" BAN" width="30px" height="20px">  BAN </td>
+              <!-- Add the country flag image here with fixed size -->
+          </td>
+          <td>7</td>
+          <td>1</td>
+          <td>6</td>
+          <td>-1.446</td>
+          <td>2</td>
+          <td class="status-circle circle-green">&#10004;</td>
+          <td class="status-circle circle-red">&#10008;</td>
+          <td class="status-circle circle-red">&#10008;</td>
+          <td class="status-circle circle-red">&#10008;</td>
+          <td class="status-circle circle-red">&#10008;</td>
+          
+      </tr><tr>
+            <td class="team-info">7 <img src="sri-lanka-flag.jpg" alt=" SL" width="30px" height="20px">  SL </td>
+                <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>8</td>
+            <td>2</td>
+            <td>6</td>
+            <td>-1.160</td>
+            <td>4</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            
+        </tr><tr>
+            <td class="team-info">8 <img src="27103.jpg" alt=" NED" width="30px" height="20px">  NED </td>
+                <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>7</td>
+            <td>2</td>
+            <td>5</td>
+            <td>-1.398</td>
+            <td>4</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-green">&#10004;</td>
+        </tr><tr>
+            <td class="team-info">10 <img src="27143.jpg" alt=" ENG" width="30px" height="20px">  ENG </td>
+                <!-- Add the country flag image here with fixed size -->
+            </td>
+            <td>7</td>
+            <td>1</td>
+            <td>6</td>
+            <td>-1.504</td>
+            <td>2</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+            <td class="status-circle circle-red">&#10008;</td>
+        </tr>
+            
+        <!-- Repeat the above row structure for each country -->
+        
+    </table>
+    </div>
+  </section>
+
+
+<header>
+<h1 style="margin:30px auto" class=".container"><u><b>India's World Cup 2023 Matches</b></u></h1>
+</header>
+<table class="table">
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Opponent</th>
+    <th>Result</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>October 8, 2023</td>
+    <td class="match"><img src="27116.jpg" class="img-match" alt=" SL" width="30px" height="20px"> Australia</td>
+    <td>India won by 6 wickets</td>
+  </tr>
+  <tr>
+    <td>October 11, 2023</td>
+    <td class="match"><img src="afghanistan-flag.jpg" alt=" SL" width="30px" height="20px"> Afganistan</td>
+    <td>India won by 8 wickets</td>
+  </tr>
+  <tr>
+    <td>October 14, 2023</td>
+    <td class="match"><img src="27123.jpg" alt=" SL" width="30px" height="20"> Pakistan </td>
+    <td>India won by 7 wickets</td>
+  </tr>
+  <tr>
+    <td>October 19, 2023</td>
+    <td class="match"><img src="bangladesh-flag.jpg" alt=" SL" width="30" height="20"> Bangladesh </td>
+    <td>India won by 7 wickets</td>
+  </tr>
+  <tr>
+    <td>October 22, 2023</td>
+    <td class="match"><img src="27119.jpg" alt=" SL" width="30" height="20"> New Zealand </td>
+    <td>India won by 4 wickets</td>
+  </tr>
+  <tr>
+    <td>October 29, 2023</td>
+    <td class="match"><img src="27143.jpg" alt=" SL" width="30" height="20"> England </td>
+    <td>India won by 100runs </td>
+  </tr>
+  <tr>
+    <td>November 2, 2023</td>
+    <td class="match"><img src="sri-lanka-flag.jpg" alt=" SL" width="30" height="20"> Sri lanka </td>
+    <td>India won by 302 runs</td>
+  </tr>
+  <tr>
+    <td>November 5, 2023</td>
+    <td class="match"><img src="27118.jpg" alt=" SL" width="30" height="20"> SouthAfrica </td>
+    <td>India won by 243 runs</td>
+  </tr>
+  <!-- Add more rows for other matches -->
+</tbody>
+</table>
+
+
+
+<header class="header.highlight-box">
+  <h1><u>Match Highlights</u></h1>
+  
+  
+</header>
+<br>
+
+<section class="highlight-section">
+  <!-- Highlight Box 1 -->
+  <div class="highlight-box neon-blue">
+    <!-- <h2>Highlight 1</h2> -->
+    
+    <img src="VIRAT-KOHLI-100-AGAINST-SA-1.webp" alt="" width="100%" height="85%" > 
+    <footer>King Kohli equal's God Sachin's Record. #49centuriesinODI #GOAT</footer>
+  </div>
+
+  <!-- Highlight Box 2 -->
+  <div class="highlight-box neon-blue">
+    <img src="download (2).jpg" alt="download" width="100%" height="80%" >
+    <footer>A five wicket haul for Ravindra Jadeja against South Africa..</footer>
+  </div>
+
+  <!-- Highlight Box 3 -->
+  <div class="highlight-box neon-blue">
+    <!-- <h2>Highlight 3</h2> -->
+    <img src="CWC23-Fixtures-announcement-16x9-v2.jpeg" alt="CWC23-Fixtures-announcement-16x9-v2" width="100%" height="80%" >
+    <footer > India becomes first to head towards Semi-Finals. </footer>
+    
+  
+  </div>
+</section>
+<br>
+<section class="highlight-section">
+  <!-- Highlight Box 1 -->
+  <div class="highlight-box neon-blue">
+    <!-- <h2>Highlight 1</h2> -->
+    <img src="nd.jpg" alt="nd.jpg" width="100%" height="85%" >
+    <footer>IND VS NETHERLANDS is scheduled on 12th November.  </footer>
+  </div>
+
+  <!-- Highlight Box 2 -->
+  <div class="highlight-box neon-blue">
+    <img src="download (3).jpg" alt="download" width="100%" height="85%" >
+    <footer>Siraj BREAkS BRAILS with menacing ball against SL. #MIAMAGIC</footer>
+  </div>
+
+  <!-- Highlight Box 3 -->
+  <div class="highlight-box neon-blue">
+    <!-- <h2>Highlight 3</h2> -->
+    <img src="download (4).jpg" alt="download" width="100%" height="80%">
+    <footer>Records crushed as Rohit Sharma made Blazing Century against Afganistan. #Hitman</footer>
+  </div>
+</section>
+<br>
+<section class="highlight-section">
+  <!-- Highlight Box 1 -->
+  <div class="highlight-box neon-blue">
+    <!-- <h2>Highlight 1</h2> -->
+    <img src="download (5).jpg" alt="download" width="100%" height="80%">
+    <footer>Kuldeep Yadav cleaned up Lungi Ngidi off a drifter to gift India a massive 243-runs victory over South Africa.</footer>
+  </div>
+
+  <!-- Highlight Box 2 -->
+  <div class="highlight-box neon-blue">
+    <!-- <h2>Highlight 2</h2> -->
+    <img src="Hd1ro9RS.jpg" alt="Hd1ro9RS" width="100%" height="80%">
+    <footer>45 world cup wickets for Shami in 14 innings,the most for an Indian Bowler.</footer>
+  </div>
+
+  <!-- Highlight Box 3 -->
+  <div class="highlight-box neon-blue">
+    <!-- <h2>Highlight 3</h2> -->
+    <img src="download (6).jpg" alt="download" width="100%" height="80%">
+    <footer>Prasidh Krishna replaces Pandya as he didn't recover in time.</footer>
+  </div>
+</section>
+</section>
+<br>
+<img src="last.jpeg" alt="" width="60%" height="550px">
+<br>
+</body>
+</html>
